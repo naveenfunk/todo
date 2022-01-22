@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_email">Not a valid email</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_success_message">Login succeeded</string>
+    <string name="login">Login</string>
+    <string name="no_internet_error">There\'s no internet connection available</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_todo">Add Todo</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="select_time">Select Time</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="select_type_header">Select Type:</string>
+    <string name="create">Create</string>
+    <string name="time_before_current_error">Please select time in future</string>
+    <string name="title_desc_empty_error">Title/Description should not be left blank</string>
+    <string name="title_empty_error">Title should not be blank</string>
+    <string name="description_empty_error">Description should not be blank</string>
+    <string name="time_not_selected_error">Please select time</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+</resources>

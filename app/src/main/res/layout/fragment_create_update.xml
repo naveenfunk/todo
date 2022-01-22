@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.createTodo.CreateUpdateFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/start_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/end_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".90" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottom_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".90" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@id/end_guide"
+            app:layout_constraintStart_toStartOf="@id/start_guide"
+            app:layout_constraintTop_toTopOf="@id/top_guide" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/description"
+            android:inputType="textLongMessage"
+            android:imeActionLabel="@string/create"
+            app:layout_constraintEnd_toEndOf="@id/end_guide"
+            app:layout_constraintStart_toStartOf="@id/start_guide"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <Button
+            android:id="@+id/date_time_select"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/select_time"
+            app:layout_constraintEnd_toEndOf="@id/end_guide"
+            app:layout_constraintStart_toStartOf="@id/start_guide"
+            app:layout_constraintTop_toBottomOf="@id/description" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/type_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/select_type_header"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/start_guide"
+            app:layout_constraintTop_toBottomOf="@id/date_time_select" />
+
+        <RadioGroup
+            android:id="@+id/type_select"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/end_guide"
+            app:layout_constraintStart_toStartOf="@id/start_guide"
+            app:layout_constraintTop_toBottomOf="@id/type_header">
+
+            <RadioButton
+                android:id="@+id/daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/daily" />
+
+            <RadioButton
+                android:id="@+id/weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weekly" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/create"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_guide"
+            app:layout_constraintEnd_toEndOf="@id/end_guide"
+            app:layout_constraintStart_toStartOf="@id/start_guide" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
